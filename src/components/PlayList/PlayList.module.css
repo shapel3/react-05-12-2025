@@ -1,0 +1,17 @@
+.songs{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.song{
+    background-color: rgb(243, 217, 221);
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+.song > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
