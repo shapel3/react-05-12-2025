@@ -1,12 +1,9 @@
-import PlayList from "./components/PlayList/PlayList";
-import QuotesList from "./components/QuotesList/QuotesList";
-
+import HeroList from "./components/Heros/HeroList";
 
 function App() {
   return (
     <>
-      <QuotesList />
-      <PlayList />
+      <HeroList />
     </>
   );
 }

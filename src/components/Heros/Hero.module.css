@@ -1,0 +1,17 @@
+
+.hero{
+background-color: gray;
+border-radius: 8px;
+padding: 10px;
+display: flex;
+min-width: 300px;
+max-width: 500px;
+justify-content: space-between;
+}
+
+.heroes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     gap: 10px;
+}
