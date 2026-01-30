@@ -1,9 +1,10 @@
-import HeroList from "./components/Heros/HeroList";
+import ConfigLaptop from "./components/ConfigLaptop/ConfigLaptop";
+
 
 function App() {
   return (
     <>
-      <HeroList />
+     <ConfigLaptop />
     </>
   );
 }
