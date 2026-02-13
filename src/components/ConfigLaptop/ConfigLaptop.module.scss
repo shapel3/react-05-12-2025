@@ -1,0 +1,38 @@
+@use "/src/common/colors" as *;
+@use "/src/common/mixins" as *;
+
+$pd: 6px;
+$br: 8px;
+
+.config {
+  background-color: $colorBgLight;
+  width: 500px;
+  @include borderRadius($br);
+  margin: auto;
+  padding: 15px;
+  fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  select {
+    @include full($pd);
+  }
+  .btn {
+    @include full($pd);
+    background-color: $colorBtn;
+    color: $colorWhite;
+    border: none;
+    @include borderRadius($br);
+    font-size: 1.2em;
+    &:disabled {
+      background-color: $colorBgDark;
+    }
+  }
+  .column > label {
+    display: block;
+  }
+  .full {
+    @include full($pd);
+  }
+}

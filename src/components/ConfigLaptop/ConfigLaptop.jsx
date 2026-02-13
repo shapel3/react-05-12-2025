@@ -1,6 +1,6 @@
 import laptopData from "./data";
 import Heading from "../Heading/Heading";
-import styles from "./ConfigLaptop.module.css";
+import styles from "./ConfigLaptop.module.scss";
 
 import PropTypes from "prop-types";
 import { useState } from "react";
@@ -75,6 +75,7 @@ const ConfigLaptop = () => {
     const total = (processorPrice + ramPrice + optionsPrice) * amountSelect;
     setResult({ processor, ramSelect, optionsSelect, amountSelect, total });
   };
+  const isDisabled = !processor || !ramSelect 
   return (
     <section className={styles.config}>
       <Heading text="Config laptop" />
@@ -105,7 +106,7 @@ const ConfigLaptop = () => {
           type="number"
         />
       </fieldset>
-      <button onClick={calculate}>Make basket</button>
+      <button className={styles.btn} disabled={isDisabled} onClick={calculate}>Make basket</button>
 
       {result && (
         <article>
