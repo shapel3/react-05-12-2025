@@ -1,10 +1,11 @@
-import ConfigLaptop from "./components/ConfigLaptop/ConfigLaptop";
+import UploadFile from "./components/UploadFile/UploadFile";
+
 
 
 function App() {
   return (
     <>
-     <ConfigLaptop />
+     <UploadFile />
     </>
   );
 }

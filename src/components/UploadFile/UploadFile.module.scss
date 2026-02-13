@@ -1,0 +1,34 @@
+@use '/src/common/colors' as *;
+@use '/src/common/mixins' as *;
+
+$br : 10px;
+
+.upload{
+    width: 300px;
+    margin: auto;
+    background-color: $colorBgLight;
+    text-align: center;
+    padding: 8px;
+    @include borderRadius($br);
+    .progressMain{
+        height: 14px;
+        width: 100%;
+        background-color: $colorBgDark;
+        @include borderRadius($br);
+        .progress{
+            background-color: $colorBtn ;
+        }
+    }
+    button{
+        @include borderRadius($br);
+        padding: 10px;
+        background-color: $colorBtn ;
+        color: $colorWhite;
+        border: none;
+    }
+    .success{
+        color:$colorBtn ;
+        font-size: 1.2em;
+        font-weight: 700;
+    }
+}
