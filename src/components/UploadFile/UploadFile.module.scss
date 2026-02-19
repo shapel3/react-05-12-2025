@@ -17,6 +17,9 @@ $br : 10px;
         @include borderRadius($br);
         .progress{
             background-color: $colorBtn ;
+            height: 100%;
+            @include borderRadius($br);
+            transition: width 0.3s linear;
         }
     }
     button{
@@ -25,10 +28,16 @@ $br : 10px;
         background-color: $colorBtn ;
         color: $colorWhite;
         border: none;
+        &:disabled{
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
     }
     .success{
         color:$colorBtn ;
         font-size: 1.2em;
         font-weight: 700;
     }
+    
 }
+
