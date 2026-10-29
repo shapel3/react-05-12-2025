@@ -1,11 +1,12 @@
-import UploadFile from "./components/UploadFile/UploadFile";
+import MoodTracker from "./components/MoodTracker/MoodTracker";
+
 
 
 
 function App() {
   return (
     <>
-     <UploadFile />
+     <MoodTracker/>
     </>
   );
 }
